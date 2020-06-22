@@ -19,6 +19,9 @@ class Triangle
     end
   end
 
+  class TriangleError < StandardError
+
+  end
   def kind
     if valid?
       if @triangle_sides.uniq.length == 1
@@ -34,6 +37,4 @@ class Triangle
   end
 end
 
-class TriangleError < StandardError
 
-end
